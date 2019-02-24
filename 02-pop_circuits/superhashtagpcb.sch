@@ -1,0 +1,144 @@
+EESchema Schematic File Version 4
+LIBS:power
+LIBS:device
+LIBS:74xx
+LIBS:audio
+LIBS:interface
+LIBS:superhashtagpcb-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Battery BT1
+U 1 1 5C56385C
+P 2900 3250
+F 0 "BT1" H 3008 3296 50  0000 L CNN
+F 1 "Battery" H 3008 3205 50  0000 L CNN
+F 2 "Battery:BatteryHolder_Keystone_3034_1x20mm" V 2900 3310 50  0001 C CNN
+F 3 "~" V 2900 3310 50  0001 C CNN
+	1    2900 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5C563B35
+P 3800 3050
+F 0 "D1" H 3791 3266 50  0000 C CNN
+F 1 "LED" H 3791 3175 50  0000 C CNN
+F 2 "DigiKey:LED_5mm_Radial" H 3800 3050 50  0001 C CNN
+F 3 "~" H 3800 3050 50  0001 C CNN
+	1    3800 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5C563B93
+P 3800 3450
+F 0 "D2" H 3791 3666 50  0000 C CNN
+F 1 "LED" H 3791 3575 50  0000 C CNN
+F 2 "DigiKey:LED_5mm_Radial" H 3800 3450 50  0001 C CNN
+F 3 "~" H 3800 3450 50  0001 C CNN
+	1    3800 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5C563C34
+P 4350 3050
+F 0 "R1" V 4143 3050 50  0000 C CNN
+F 1 "R" V 4234 3050 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4280 3050 50  0001 C CNN
+F 3 "~" H 4350 3050 50  0001 C CNN
+	1    4350 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5C563C8F
+P 4350 3450
+F 0 "R2" V 4143 3450 50  0000 C CNN
+F 1 "R" V 4234 3450 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4280 3450 50  0001 C CNN
+F 3 "~" H 4350 3450 50  0001 C CNN
+	1    4350 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_DPDT_x2 SW1
+U 1 1 5C5642E2
+P 5250 3300
+F 0 "SW1" H 5250 3585 50  0000 C CNN
+F 1 "SW_DPDT_x2" H 5250 3494 50  0000 C CNN
+F 2 "DigiKey:Switch_Toggle_ATE1D-2M3-10-Z" H 5250 3300 50  0001 C CNN
+F 3 "" H 5250 3300 50  0001 C CNN
+	1    5250 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 3050 4750 3050
+Wire Wire Line
+	4750 3050 4750 3300
+Wire Wire Line
+	4750 3300 5050 3300
+Wire Wire Line
+	4500 3450 4750 3450
+Wire Wire Line
+	4750 3450 4750 3300
+Connection ~ 4750 3300
+Wire Wire Line
+	3950 3450 4200 3450
+Wire Wire Line
+	4200 3050 3950 3050
+Wire Wire Line
+	3650 3050 3400 3050
+Wire Wire Line
+	3400 3050 3400 3450
+$Comp
+L power:GND #PWR0101
+U 1 1 5C564F2C
+P 3400 4150
+F 0 "#PWR0101" H 3400 3900 50  0001 C CNN
+F 1 "GND" H 3405 3977 50  0000 C CNN
+F 2 "" H 3400 4150 50  0001 C CNN
+F 3 "" H 3400 4150 50  0001 C CNN
+	1    3400 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5C564F73
+P 2900 3450
+F 0 "#PWR0102" H 2900 3200 50  0001 C CNN
+F 1 "GND" H 2905 3277 50  0000 C CNN
+F 2 "" H 2900 3450 50  0001 C CNN
+F 3 "" H 2900 3450 50  0001 C CNN
+	1    2900 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 3450 3400 3450
+Connection ~ 3400 3450
+Wire Wire Line
+	3400 3450 3400 4150
+Wire Wire Line
+	5450 3200 6250 3200
+Wire Wire Line
+	2900 3050 2900 2900
+Wire Wire Line
+	2900 2900 3100 2900
+Text Label 3100 2900 0    50   ~ 0
+VCC
+Text Label 6250 3200 0    50   ~ 0
+VCC
+$EndSCHEMATC

@@ -1,6 +1,3 @@
-/kicad/.svg2shenzhen-cache
-/kicad/*.bak
-/kicad/*.kicad_pcb-bak
-/superhashtag_stepone/.svg2shenzhen-cache
-/superhashtag_stepone/*.bak
-/superhashtag_stepone/*.kicad_pcb-bak
+.svg2shenzhen-cache
+*.bak
+*.kicad_pcb-bak
