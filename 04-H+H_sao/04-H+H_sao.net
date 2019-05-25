@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source D:\Development\PCB\superhashtag\04-H+H_sao\04-H+H_sao.sch)
-    (date "5/25/2019 1:52:44 PM")
+    (date "5/25/2019 3:50:44 PM")
     (tool "Eeschema (5.0.0)")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -23,7 +23,7 @@
       (tstamp 5CE9959A))
     (comp (ref U1)
       (value ICM7555)
-      (footprint Package_DIP:DIP-8_W7.62mm_SMDSocket_SmallPads)
+      (footprint ICM7555IBAZ-T:SOIC127P600X175-8N)
       (datasheet http://www.intersil.com/content/dam/Intersil/documents/icm7/icm7555-56.pdf)
       (libsource (lib Timer) (part ICM7555) (description "CMOS General Purpose Timer, DIP-8/SOIC-8"))
       (sheetpath (names /) (tstamps /))

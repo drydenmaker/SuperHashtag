@@ -62,7 +62,7 @@ U 1 1 5CE9C362
 P 5100 3450
 F 0 "U1" H 5100 4028 50  0000 C CNN
 F 1 "ICM7555" H 5100 3937 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_SMDSocket_SmallPads" H 5100 3450 50  0001 C CNN
+F 2 "ICM7555IBAZ-T:SOIC127P600X175-8N" H 5100 3450 50  0001 C CNN
 F 3 "http://www.intersil.com/content/dam/Intersil/documents/icm7/icm7555-56.pdf" H 5100 3450 50  0001 C CNN
 	1    5100 3450
 	1    0    0    -1  
