@@ -1,0 +1,4 @@
+
+(fp_lib_table
+  (lib (name "superhashtagpcb")(type KiCad)(uri "$(KIPRJMOD)/superhashtagpcb.pretty")(options "")(descr ""))
+)
