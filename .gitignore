@@ -1,3 +1,6 @@
 .svg2shenzhen-cache
 *.bak
 *.kicad_pcb-bak
+/04-H+H_sao/fp-info-cache
+/04-H+H_sao/gerbers/*.zip
+/04-H+H_sao/gerbers/*.7z
